@@ -1,7 +1,7 @@
 let cookieName = prompt("What should we name your cookie: ");
 let multiplier = 1;
 let cookieCountObj =  document.querySelector('.count');
-let upgradeCostObj = document.querySelector('.cost');
+let upgradeCostObj = document.querySelector('.costNum');
 document.querySelector('.name').innerHTML = cookieName;
 
 
@@ -30,9 +30,10 @@ function buyUpgrade(){
     multiplier *= 2;
     cookieCount = Number(cookieCountObj.innerHTML);
     upgradeCost = Number(upgradeCostObj.innerHTML);
-
+    //update cookie count, cost of upgrade and current multiplier
     cookieCountObj.innerHTML = cookieCount - upgradeCost;
     upgradeCostObj.innerHTML = upgradeCost * 4;
+    document.querySelector('.multiplier').innerHTML = multiplier;
 
     //reset color of cost if neccessary
     updateColor('red');

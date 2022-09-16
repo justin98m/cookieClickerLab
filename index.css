@@ -36,7 +36,7 @@ main{
   max-width: 100%;
   height: auto;
 }
-.upgrade{
+.multiplierHeader{
   color: #B4FF29;
   grid-column: 3/6;
   text-align: center;
@@ -53,19 +53,25 @@ main{
 
 }
 .cost{
-  font-size: 35px;
-  border: solid yellow
+  font-size: 25px;
+  border: solid yellow;
   grid-column: 4;
   grid-row: 2;
-  color: red;
+  color: white;
+  text-decoration: underline;
   text-align: center;
 }
+.costNum{
+  font-size: 38px;
+  color: red;
+}
 .buyButton{
-  font-size: 18px;
+  font-size: 28px;
   border: solid white;
   grid-column: 5;
   grid-row: 2;
   height: 30%;
+  background-color: #B4FF29;
 }
 .filler{
   margin-top: 10px;
